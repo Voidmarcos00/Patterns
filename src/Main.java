@@ -23,6 +23,18 @@ public class Main {
         System.out.println("PATTERN 7");
         pattern7(5);
         System.out.println();
+        System.out.println("PATTERN 8");
+        pattern8(5);
+        System.out.println();
+        System.out.println("PATTERN 9");
+        pattern9(5);
+        System.out.println();
+        System.out.println("PATTERN 10");
+        pattern10(5);
+        System.out.println();
+        System.out.println("PATTERN 11");
+        pattern11(10);
+        System.out.println();
     }
 
     public static void pattern1(int n) {
@@ -140,15 +152,65 @@ public class Main {
         System.out.println();
     }
 
-    public int[] twoSum(int[] arr, int target) {
-        int left = 0, right = arr.length - 1;
-        while (left < right) {
-            int sum = arr[left] + arr[right];
-            if (sum == target) return new int[]{left, right};
-            else if (sum < target) left++;
-            else right--;
+    public static void pattern8(int n){
+        for (int i = 1; i <n ; i++) {
+            for (int j = 1; j < n-i ; j++) {
+                System.out.print(" - ");
+            }
+            for (int j = 1; j < 2*i ; j++) {
+                System.out.print(" * ");
+            }
+            for (int j = 1; j < n-i; j++) {
+                System.out.print(" - ");
+            }
+            System.out.println();
         }
-        return new int[]{};
+    }
+
+    public static void pattern9(int n){
+        for (int i = n-1; i >0 ; i--) {
+            for (int j = 1; j < n-i; j++) {
+                System.out.print(" - ");
+            }
+            for (int j = 1; j <2*i ; j++) {
+                System.out.print(" * ");
+            }
+            for (int j = 1; j < n-i; j++) {
+                System.out.print(" - ");
+            }
+        System.out.println();
+        }
+    }
+
+    public static void pattern10(int n){
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+        for (int i = n; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void pattern11(int n){
+        for (int i = 0; i < n ; i++) {
+            for (int j = 0; j <=n/2; j++) {
+                if(i==0 || j==0 || i==n/2 || j==n/2){
+                    if(i==0 && (j==0 || j==n/2))
+                       System.out.print("  ");
+                    else
+                        System.out.print(" * ");
+                }
+                else
+                System.out.print("   ");
+            }
+        System.out.println();
+        }
     }
 }
 
