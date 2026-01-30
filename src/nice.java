@@ -55,5 +55,6 @@ class Main {
         // Dynamic method dispatch — decides which method to call at runtime
         System.out.println("Area of Circle: " + cir.calculateArea());
         System.out.println("Area of Rectangle: " + rect.calculateArea());
+        System.out.println("hi");
     }
 }
