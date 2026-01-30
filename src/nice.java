@@ -56,5 +56,6 @@ class Main {
         System.out.println("Area of Circle: " + cir.calculateArea());
         System.out.println("Area of Rectangle: " + rect.calculateArea());
         System.out.println("Area of Rectangle with circumference: " + rect.calculateArea());
+        System.out.println("Area of Rectangle with circumference: " + rect.calculateArea());
     }
 }
